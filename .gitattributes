@@ -1,0 +1,14 @@
+# Normalise line endings; keep platform/binary files intact
+* text=auto
+*.bat text eol=crlf
+*.cmd text eol=crlf
+gradlew text eol=lf
+*.sh text eol=lf
+*.jar binary
+*.keystore binary
+*.p12 binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.ttf binary
+*.psd binary
