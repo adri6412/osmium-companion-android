@@ -15,6 +15,8 @@ jobs:
         java-version: '17'
         distribution: 'adopt'
         cache: 'gradle'
+    # Debug build only: a push CI sanity check that needs no signing keystore
+    # (the signed release APK/AAB is built by build-companion-apk.yml on tags).
     - name: Build with Gradle
-      run: ./gradlew clean build
+      run: ./gradlew assembleDebug
 
